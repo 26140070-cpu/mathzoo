@@ -1,0 +1,23 @@
+[package]
+name = "mathzoo"
+version = "0.2.0"
+edition = "2021"
+description = "Colorful real-time mathematical simulations and generative art for your terminal"
+license = "MIT"
+keywords = ["terminal", "visualization", "chaos", "fractal", "tui"]
+categories = ["command-line-utilities", "visualization", "science"]
+readme = "README.md"
+documentation = "https://docs.rs/mathzoo"
+homepage = "https://crates.io/crates/mathzoo"
+
+[[bin]]
+name = "mathzoo"
+path = "src/main.rs"
+
+[dependencies]
+crossterm = "0.28"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
