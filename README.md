@@ -43,4 +43,4 @@ The app uses ANSI true color and Unicode Braille characters. For the intended di
 
 ## License
 
-MIT
+GPL-3.0
